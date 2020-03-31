@@ -1,0 +1,26 @@
+PODS:
+  - APLog (3.0.2.190701174234)
+  - mPaas (1.0.0.200210192055):
+    - APLog
+  - MPDataCenter (1.0.0.190917163242):
+    - mPaas
+
+DEPENDENCIES:
+  - APLog (= 3.0.2.190701174234)
+  - mPaas (= 1.0.0.200210192055)
+  - MPDataCenter (= 1.0.0.190917163242)
+
+SPEC REPOS:
+  https://code.aliyun.com/mpaas-public/podspecs.git:
+    - APLog
+    - mPaas
+    - MPDataCenter
+
+SPEC CHECKSUMS:
+  APLog: 544dd57a9005ba27800828bccd3dfd41d3d7fd14
+  mPaas: d3aeda876d3ecb149f4f43b6d6a3725c11b2ce97
+  MPDataCenter: bbbf8c978d680edacdce1de55ba6b0cdd8707057
+
+PODFILE CHECKSUM: 0f071e40ce4876ea9f22145af48b88095048dcbd
+
+COCOAPODS: 1.7.5

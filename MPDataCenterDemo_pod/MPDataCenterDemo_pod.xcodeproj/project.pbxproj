@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		054CF0C3BB5474578D14B3BF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBCB3FF548FFBD7861EDCCBB /* SystemConfiguration.framework */; };
+		2A1484E0AFBB5211959C9784 /* libPods-MPDataCenterDemo_pod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F841782D3618A9C390B27591 /* libPods-MPDataCenterDemo_pod.a */; };
+		3916AD80243327AE00780630 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3916AD7F243327AE00780630 /* AVFoundation.framework */; };
+		3916AD82243327BA00780630 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3916AD81243327BA00780630 /* Photos.framework */; };
+		3916AD84243327C500780630 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3916AD83243327C500780630 /* CoreLocation.framework */; };
+		3916AD86243327CC00780630 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3916AD85243327CC00780630 /* Contacts.framework */; };
+		3916AD88243327D700780630 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3916AD87243327D700780630 /* AddressBook.framework */; };
+		39C91447224A439900D95BBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C91446224A439900D95BBF /* AppDelegate.m */; };
+		39C9144A224A439900D95BBF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C91449224A439900D95BBF /* ViewController.m */; };
+		39C9144D224A439900D95BBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39C9144B224A439900D95BBF /* Main.storyboard */; };
+		39C9144F224A439A00D95BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39C9144E224A439A00D95BBF /* Assets.xcassets */; };
+		39C91452224A439A00D95BBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39C91450224A439A00D95BBF /* LaunchScreen.storyboard */; };
+		39C91455224A439A00D95BBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C91454224A439A00D95BBF /* main.m */; };
+		7605DD724D7864B5434DA045 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017B51F42FB3E1801C07FED5 /* CoreTelephony.framework */; };
+		8A9EA7B84D99BEEBB46D8420 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4881C5B07CFF72BE3680A93C /* SystemConfiguration.framework */; };
+		9E7444A8DC7F0EDFBD45E2CF /* MPaaSInterface+MPDataCenterDemo_pod.m in Sources */ = {isa = PBXBuildFile; fileRef = B11B21445E1BB5520046F068 /* MPaaSInterface+MPDataCenterDemo_pod.m */; };
+		A0183C8215FA461AA8CFDCD2 /* yw_1222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9970A5D45F8AE3C105F5E9D /* yw_1222.jpg */; };
+		A7027AF6EAE973026C1DDE22 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F55EC90C4AFB6F97956DA301 /* CoreTelephony.framework */; };
+		CE7F40788398A96A0AD802A9 /* meta.config in Resources */ = {isa = PBXBuildFile; fileRef = B089A7BAC21B9CF2E694FEC1 /* meta.config */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		017B51F42FB3E1801C07FED5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		112B32B31957F2F16777B45C /* MPDataCenterDemo_pod-mPaaS-Headers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MPDataCenterDemo_pod-mPaaS-Headers.h"; sourceTree = "<group>"; };
+		3916AD7F243327AE00780630 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3916AD81243327BA00780630 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		3916AD83243327C500780630 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3916AD85243327CC00780630 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		3916AD87243327D700780630 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		39C91442224A439900D95BBF /* MPDataCenterDemo_pod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPDataCenterDemo_pod.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39C91445224A439900D95BBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		39C91446224A439900D95BBF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		39C91448224A439900D95BBF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		39C91449224A439900D95BBF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		39C9144C224A439900D95BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39C9144E224A439A00D95BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39C91451224A439A00D95BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39C91453224A439A00D95BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39C91454224A439A00D95BBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4881C5B07CFF72BE3680A93C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		599730B196B33189DCADC922 /* MPDataCenterDemo_pod-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MPDataCenterDemo_pod-Prefix.pch"; path = "../../../MPDataCenterDemo_pod/MPDataCenterDemo_pod-Prefix.pch"; sourceTree = "<group>"; };
+		9BAD601C6FBA521D6FE61E40 /* MPaaSInterface+MPDataCenterDemo_pod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MPaaSInterface+MPDataCenterDemo_pod.h"; sourceTree = "<group>"; };
+		B089A7BAC21B9CF2E694FEC1 /* meta.config */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = meta.config; sourceTree = "<group>"; };
+		B11B21445E1BB5520046F068 /* MPaaSInterface+MPDataCenterDemo_pod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MPaaSInterface+MPDataCenterDemo_pod.m"; sourceTree = "<group>"; };
+		BBCB3FF548FFBD7861EDCCBB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		CC98675C1902FD4664310125 /* Pods-MPDataCenterDemo_pod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPDataCenterDemo_pod.debug.xcconfig"; path = "Target Support Files/Pods-MPDataCenterDemo_pod/Pods-MPDataCenterDemo_pod.debug.xcconfig"; sourceTree = "<group>"; };
+		E06591C59AA34CA198BE2040 /* Pods-MPDataCenterDemo_pod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPDataCenterDemo_pod.release.xcconfig"; path = "Target Support Files/Pods-MPDataCenterDemo_pod/Pods-MPDataCenterDemo_pod.release.xcconfig"; sourceTree = "<group>"; };
+		E9970A5D45F8AE3C105F5E9D /* yw_1222.jpg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.jpeg; path = yw_1222.jpg; sourceTree = "<group>"; };
+		F55EC90C4AFB6F97956DA301 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		F841782D3618A9C390B27591 /* libPods-MPDataCenterDemo_pod.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MPDataCenterDemo_pod.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39C9143F224A439900D95BBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3916AD88243327D700780630 /* AddressBook.framework in Frameworks */,
+				3916AD86243327CC00780630 /* Contacts.framework in Frameworks */,
+				3916AD84243327C500780630 /* CoreLocation.framework in Frameworks */,
+				3916AD82243327BA00780630 /* Photos.framework in Frameworks */,
+				3916AD80243327AE00780630 /* AVFoundation.framework in Frameworks */,
+				A7027AF6EAE973026C1DDE22 /* CoreTelephony.framework in Frameworks */,
+				8A9EA7B84D99BEEBB46D8420 /* SystemConfiguration.framework in Frameworks */,
+				2A1484E0AFBB5211959C9784 /* libPods-MPDataCenterDemo_pod.a in Frameworks */,
+				7605DD724D7864B5434DA045 /* CoreTelephony.framework in Frameworks */,
+				054CF0C3BB5474578D14B3BF /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09EEC4740DE54183EF6646AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC98675C1902FD4664310125 /* Pods-MPDataCenterDemo_pod.debug.xcconfig */,
+				E06591C59AA34CA198BE2040 /* Pods-MPDataCenterDemo_pod.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		11E902C47405E831F6C9FCCC /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				D608999078ED4741330CBD44 /* MPDataCenterDemo_pod */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		39C91439224A439900D95BBF = {
+			isa = PBXGroup;
+			children = (
+				39C91444224A439900D95BBF /* MPDataCenterDemo_pod */,
+				39C91443224A439900D95BBF /* Products */,
+				09EEC4740DE54183EF6646AF /* Pods */,
+				FDCBF55E8335E02F95D7CA7B /* Frameworks */,
+				46CC0A124C7C107219258D70 /* MPaaS */,
+			);
+			sourceTree = "<group>";
+		};
+		39C91443224A439900D95BBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39C91442224A439900D95BBF /* MPDataCenterDemo_pod.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39C91444224A439900D95BBF /* MPDataCenterDemo_pod */ = {
+			isa = PBXGroup;
+			children = (
+				39C91445224A439900D95BBF /* AppDelegate.h */,
+				39C91446224A439900D95BBF /* AppDelegate.m */,
+				39C91448224A439900D95BBF /* ViewController.h */,
+				39C91449224A439900D95BBF /* ViewController.m */,
+				39C9144B224A439900D95BBF /* Main.storyboard */,
+				39C9144E224A439A00D95BBF /* Assets.xcassets */,
+				39C91450224A439A00D95BBF /* LaunchScreen.storyboard */,
+				39C91453224A439A00D95BBF /* Info.plist */,
+				39C91454224A439A00D95BBF /* main.m */,
+			);
+			path = MPDataCenterDemo_pod;
+			sourceTree = "<group>";
+		};
+		45E31C1A2E17DDB5F24B139C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F55EC90C4AFB6F97956DA301 /* CoreTelephony.framework */,
+				4881C5B07CFF72BE3680A93C /* SystemConfiguration.framework */,
+				017B51F42FB3E1801C07FED5 /* CoreTelephony.framework */,
+				BBCB3FF548FFBD7861EDCCBB /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		46CC0A124C7C107219258D70 /* MPaaS */ = {
+			isa = PBXGroup;
+			children = (
+				11E902C47405E831F6C9FCCC /* Targets */,
+			);
+			path = MPaaS;
+			sourceTree = "<group>";
+		};
+		D608999078ED4741330CBD44 /* MPDataCenterDemo_pod */ = {
+			isa = PBXGroup;
+			children = (
+				E9970A5D45F8AE3C105F5E9D /* yw_1222.jpg */,
+				112B32B31957F2F16777B45C /* MPDataCenterDemo_pod-mPaaS-Headers.h */,
+				599730B196B33189DCADC922 /* MPDataCenterDemo_pod-Prefix.pch */,
+				FF8E15F271F06A6837F76F06 /* mPaas */,
+				B089A7BAC21B9CF2E694FEC1 /* meta.config */,
+			);
+			path = MPDataCenterDemo_pod;
+			sourceTree = "<group>";
+		};
+		FDCBF55E8335E02F95D7CA7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3916AD87243327D700780630 /* AddressBook.framework */,
+				3916AD85243327CC00780630 /* Contacts.framework */,
+				3916AD83243327C500780630 /* CoreLocation.framework */,
+				3916AD81243327BA00780630 /* Photos.framework */,
+				3916AD7F243327AE00780630 /* AVFoundation.framework */,
+				F841782D3618A9C390B27591 /* libPods-MPDataCenterDemo_pod.a */,
+				45E31C1A2E17DDB5F24B139C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF8E15F271F06A6837F76F06 /* mPaas */ = {
+			isa = PBXGroup;
+			children = (
+				9BAD601C6FBA521D6FE61E40 /* MPaaSInterface+MPDataCenterDemo_pod.h */,
+				B11B21445E1BB5520046F068 /* MPaaSInterface+MPDataCenterDemo_pod.m */,
+			);
+			path = mPaas;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39C91441224A439900D95BBF /* MPDataCenterDemo_pod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39C91458224A439A00D95BBF /* Build configuration list for PBXNativeTarget "MPDataCenterDemo_pod" */;
+			buildPhases = (
+				55E83D53A1D9396D7ADB8ACA /* [CP] Check Pods Manifest.lock */,
+				39C9143E224A439900D95BBF /* Sources */,
+				39C9143F224A439900D95BBF /* Frameworks */,
+				39C91440224A439900D95BBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MPDataCenterDemo_pod;
+			productName = MPDataCenterDemo_pod;
+			productReference = 39C91442224A439900D95BBF /* MPDataCenterDemo_pod.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39C9143A224A439900D95BBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = mPaaS;
+				TargetAttributes = {
+					39C91441224A439900D95BBF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 39C9143D224A439900D95BBF /* Build configuration list for PBXProject "MPDataCenterDemo_pod" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39C91439224A439900D95BBF;
+			productRefGroup = 39C91443224A439900D95BBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39C91441224A439900D95BBF /* MPDataCenterDemo_pod */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39C91440224A439900D95BBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C91452224A439A00D95BBF /* LaunchScreen.storyboard in Resources */,
+				39C9144F224A439A00D95BBF /* Assets.xcassets in Resources */,
+				39C9144D224A439900D95BBF /* Main.storyboard in Resources */,
+				A0183C8215FA461AA8CFDCD2 /* yw_1222.jpg in Resources */,
+				CE7F40788398A96A0AD802A9 /* meta.config in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55E83D53A1D9396D7ADB8ACA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MPDataCenterDemo_pod-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39C9143E224A439900D95BBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C9144A224A439900D95BBF /* ViewController.m in Sources */,
+				39C91455224A439A00D95BBF /* main.m in Sources */,
+				39C91447224A439900D95BBF /* AppDelegate.m in Sources */,
+				9E7444A8DC7F0EDFBD45E2CF /* MPaaSInterface+MPDataCenterDemo_pod.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		39C9144B224A439900D95BBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39C9144C224A439900D95BBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		39C91450224A439A00D95BBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39C91451224A439A00D95BBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39C91456224A439A00D95BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		39C91457224A439A00D95BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39C91459224A439A00D95BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC98675C1902FD4664310125 /* Pods-MPDataCenterDemo_pod.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWNC46252S;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MPDataCenterDemo_pod/MPDataCenterDemo_pod-Prefix.pch";
+				INFOPLIST_FILE = MPDataCenterDemo_pod/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mpaas.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39C9145A224A439A00D95BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E06591C59AA34CA198BE2040 /* Pods-MPDataCenterDemo_pod.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWNC46252S;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MPDataCenterDemo_pod/MPDataCenterDemo_pod-Prefix.pch";
+				INFOPLIST_FILE = MPDataCenterDemo_pod/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mpaas.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39C9143D224A439900D95BBF /* Build configuration list for PBXProject "MPDataCenterDemo_pod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C91456224A439A00D95BBF /* Debug */,
+				39C91457224A439A00D95BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39C91458224A439A00D95BBF /* Build configuration list for PBXNativeTarget "MPDataCenterDemo_pod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C91459224A439A00D95BBF /* Debug */,
+				39C9145A224A439A00D95BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39C9143A224A439900D95BBF /* Project object */;
+}

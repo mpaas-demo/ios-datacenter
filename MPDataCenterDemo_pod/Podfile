@@ -1,0 +1,20 @@
+# mPaaS Pods Begin
+plugin "cocoapods-mPaaS"
+source "https://code.aliyun.com/mpaas-public/podspecs.git"
+mPaaS_baseline '10.1.60'  # 请将 x.x.x 替换成真实基线版本
+mPaaS_version_code 29   # This line is maintained by MPaaS plugin automatically. Please don't modify.
+#use_pod_for_mPaaS!
+#mPaaS_baseline 'x.x.x'  # 请将 x.x.x 替换成真实基线版本
+mPaaS_version_code 29   # This line is maintained by MPaaS plugin automatically. Please don't modify.
+# mPaaS Pods End
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'MPDataCenterDemo_pod' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for MPDataCenterDemo_pod
+    mPaaS_pod "mPaaS_DataCenter"
+
+end

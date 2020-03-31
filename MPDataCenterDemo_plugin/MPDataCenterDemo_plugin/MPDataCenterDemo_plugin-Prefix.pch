@@ -1,0 +1,15 @@
+
+#ifndef Mpaas_Prefix_Header_pch
+#define Mpaas_Prefix_Header_pch
+
+// This part is maintained by MPaaS plugin automatically.
+#ifdef __OBJC__
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "MPDataCenterDemo_plugin-mPaaS-Headers.h"
+
+
+#endif
+
+#endif /* Mpaas_Prefix_Header_pch */
