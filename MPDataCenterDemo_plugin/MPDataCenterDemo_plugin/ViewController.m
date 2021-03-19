@@ -1,13 +1,10 @@
 
 #import "ViewController.h"
 #import <MPDataCenter/MPDataCenter.h>
+#import "MPDAOProxy.h"
+#import "MPInfo.h"
 
 # define  dataBusiness @"dataTestCase"
-
-@protocol DemoProtocol <APDAOProtocol>
-- (APDAOResult*)insertItem:(NSString*)content;
-- (NSString*)getItem:(NSNumber*)index;
-@end
 
 
 @interface MPCodingData : NSObject <NSCoding>
@@ -36,12 +33,15 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) id<MPDAOProxy> daoProxy;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"统一存储";
     self.view.backgroundColor = [UIColor whiteColor];
@@ -59,6 +59,10 @@
     [button1 setTitle:@"LRU 存储" forState:UIControlStateNormal];
     [button1 addTarget:self action:@selector(lruStorage) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button1];
+    
+    //init DB
+    [self initDb];
+    [self daoTest];
 }
 
 
@@ -104,6 +108,46 @@
     APLRUDiskCache *dCache = [[APLRUDiskCache alloc] initWithName:@"diskCache" capacity:100 userDependent:NO crypted:NO];
     [dCache setObject:@"vvd" forKey:@"key"];
     assert([@"vvd" isEqualToString:[dCache objectForKey:@"key"]]);
+    
+}
+
+
+//DAO TEST
+- (void)initDb
+{
+    // 这个方法调用一次就够了。
+    static dispatch_once_t once_token;
+    dispatch_once(&once_token, ^{
+        [[APDataCenter defaultDataCenter] setCurrentUserId:@"mptest"];
+        NSString *dbPath = [[NSBundle mainBundle] pathForResource:@"Demo.bundle/db/config"
+                                                           ofType:@"xml"];
+        self.daoProxy = (id<MPDAOProxy>)[[APDataCenter defaultDataCenter] daoWithPath:dbPath
+                                                                        userDependent:YES
+                                                                             protocol:@protocol(MPDAOProxy)];
+    });
+    
+}
+
+- (void)daoTest {
+    MPInfo *info = [MPInfo new];
+    info.code = @"222";
+    info.name = @"mp";
+    
+    [self.daoProxy save_info:info];
+    
+    MPInfo *inf = [self.daoProxy get_info:@"222"];
+    NSLog(@"name: %@", inf.name);
+    
+    info.name = @"updateName";
+    [self.daoProxy save_info:info];
+    inf = [self.daoProxy get_info:@"222"];
+    NSLog(@"name: %@", inf.name);
+    
+    [self.daoProxy delete_info:@"222"];
+    
+    inf = [self.daoProxy get_info:@"222"];
+    NSLog(@"name: %@", inf.name);
+    
     
 }
 

@@ -13,7 +13,7 @@
 
 - (NSString *)userId
 {
-    return nil;
+    return @"MPTEST";
 }
 
 @end

@@ -1,0 +1,31 @@
+<module name="Demo" initializer="createTable" tableName="MPInfo" version="3.0" resetOnUpgrade="true">
+    <const table_columns="(code,name)"/>
+    <const table_values="%{'#{m.*}',code,name}"/>
+    
+    <update id="createTable">
+        create table if not exists ${T} (code text primary key, name text)
+    </update>
+    
+    <!-- 数据保存和更新 -->
+    <insert id = "save_info" arguments = "m">
+        replace into ${T} ${table_columns} values(${table_values})
+    </insert>
+    
+    
+    <!-- 获取信息 -->
+    <select id = "get_info" arguments = "code" result = "MPInfo">
+        select *from ${T} where code = #{code}
+    </select>
+    
+    <!-- 更新 -->
+    <update id = "update_info" arguments = "m">
+        update ${T} set name = #{m.name} where code = #{m.code}
+    </update>
+    
+    <!-- 删除 -->
+    <delete id = "delete_info" arguments = "code">
+        delete from ${T} where code = #{code}
+    </delete>
+
+    
+</module>

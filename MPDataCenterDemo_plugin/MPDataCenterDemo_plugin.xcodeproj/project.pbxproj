@@ -15,6 +15,8 @@
 		39D3228A224B445200D42E7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D32289224B445200D42E7E /* Assets.xcassets */; };
 		39D3228D224B445200D42E7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D3228B224B445200D42E7E /* LaunchScreen.storyboard */; };
 		39D32290224B445200D42E7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D3228F224B445200D42E7E /* main.m */; };
+		39E2401326036CA700AFC7CE /* MPInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E2401226036CA700AFC7CE /* MPInfo.m */; };
+		39E24018260370B100AFC7CE /* Demo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 39E24017260370B100AFC7CE /* Demo.bundle */; };
 		4379A218871C34D28EBC9B64 /* yw_1222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02BFB08C91FB2E96BC1FE163 /* yw_1222.jpg */; };
 		B158349FBC16F1092B9129A7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6189E9132152B11DC113BC1C /* SystemConfiguration.framework */; };
 		B6E08F9AA5AF6D9B241C9FDE /* meta.config in Resources */ = {isa = PBXBuildFile; fileRef = C97809BF3020324F5A9E8FD0 /* meta.config */; };
@@ -23,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02BFB08C91FB2E96BC1FE163 /* yw_1222.jpg */ = {isa = PBXFileReference; includeInIndex = 1; path = yw_1222.jpg; sourceTree = "<group>"; };
+		02BFB08C91FB2E96BC1FE163 /* yw_1222.jpg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.jpeg; path = yw_1222.jpg; sourceTree = "<group>"; };
 		39D3227D224B445100D42E7E /* MPDataCenterDemo_plugin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPDataCenterDemo_plugin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D32280224B445100D42E7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		39D32281224B445100D42E7E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -34,6 +36,10 @@
 		39D3228C224B445200D42E7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39D3228E224B445200D42E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39D3228F224B445200D42E7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		39E2400A260358AB00AFC7CE /* MPDAOProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPDAOProxy.h; sourceTree = "<group>"; };
+		39E2401126036CA700AFC7CE /* MPInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPInfo.h; sourceTree = "<group>"; };
+		39E2401226036CA700AFC7CE /* MPInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPInfo.m; sourceTree = "<group>"; };
+		39E24017260370B100AFC7CE /* Demo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Demo.bundle; sourceTree = "<group>"; };
 		45228CEB421BC5516C76C123 /* MPDataCenterDemo_plugin-mPaaS-Headers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MPDataCenterDemo_plugin-mPaaS-Headers.h"; sourceTree = "<group>"; };
 		464E7B6045EB329DE53351E0 /* MPDataCenterDemo_plugin-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MPDataCenterDemo_plugin-Prefix.pch"; path = "../../../MPDataCenterDemo_plugin/MPDataCenterDemo_plugin-Prefix.pch"; sourceTree = "<group>"; };
 		5FD262B5BC44F108A2749214 /* APLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APLog.framework; sourceTree = "<group>"; };
@@ -41,8 +47,8 @@
 		69C2D902A701F3427915855E /* mPaas.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mPaas.framework; sourceTree = "<group>"; };
 		950350323B6751C7F3533B34 /* MPDataCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MPDataCenter.framework; sourceTree = "<group>"; };
 		AAC292AB8BCB17DE523EF6ED /* MPaaSInterface+MPDataCenterDemo_plugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MPaaSInterface+MPDataCenterDemo_plugin.m"; sourceTree = "<group>"; };
-		AE8A2279FCE0901E4C6DF15D /* mpaas_sdk.config */ = {isa = PBXFileReference; includeInIndex = 1; path = mpaas_sdk.config; sourceTree = "<group>"; };
-		C97809BF3020324F5A9E8FD0 /* meta.config */ = {isa = PBXFileReference; includeInIndex = 1; path = meta.config; sourceTree = "<group>"; };
+		AE8A2279FCE0901E4C6DF15D /* mpaas_sdk.config */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = mpaas_sdk.config; sourceTree = "<group>"; };
+		C97809BF3020324F5A9E8FD0 /* meta.config */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = meta.config; sourceTree = "<group>"; };
 		DC95C9ED39309AE2CCADD23F /* MPDataCenterDemo_plugin-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MPDataCenterDemo_plugin-Prefix.pch"; sourceTree = "<group>"; };
 		F5DF6242860E29FF5981A5D6 /* MPaaSInterface+MPDataCenterDemo_plugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MPaaSInterface+MPDataCenterDemo_plugin.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,7 +74,6 @@
 				F5DF6242860E29FF5981A5D6 /* MPaaSInterface+MPDataCenterDemo_plugin.h */,
 				AAC292AB8BCB17DE523EF6ED /* MPaaSInterface+MPDataCenterDemo_plugin.m */,
 			);
-			name = mPaas;
 			path = mPaas;
 			sourceTree = "<group>";
 		};
@@ -79,7 +84,6 @@
 				950350323B6751C7F3533B34 /* MPDataCenter.framework */,
 				69C2D902A701F3427915855E /* mPaas.framework */,
 			);
-			name = Frameworks;
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
@@ -104,6 +108,9 @@
 		39D3227F224B445100D42E7E /* MPDataCenterDemo_plugin */ = {
 			isa = PBXGroup;
 			children = (
+				39E24016260370B100AFC7CE /* Resources */,
+				39E2401126036CA700AFC7CE /* MPInfo.h */,
+				39E2401226036CA700AFC7CE /* MPInfo.m */,
 				39D32280224B445100D42E7E /* AppDelegate.h */,
 				39D32281224B445100D42E7E /* AppDelegate.m */,
 				39D32283224B445100D42E7E /* ViewController.h */,
@@ -114,16 +121,24 @@
 				39D3228E224B445200D42E7E /* Info.plist */,
 				39D3228F224B445200D42E7E /* main.m */,
 				DC95C9ED39309AE2CCADD23F /* MPDataCenterDemo_plugin-Prefix.pch */,
+				39E2400A260358AB00AFC7CE /* MPDAOProxy.h */,
 			);
 			path = MPDataCenterDemo_plugin;
 			sourceTree = "<group>";
+		};
+		39E24016260370B100AFC7CE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				39E24017260370B100AFC7CE /* Demo.bundle */,
+			);
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
 		};
 		4B4900ECBA588141CC7D0315 /* Targets */ = {
 			isa = PBXGroup;
 			children = (
 				53BA98B56C5299377B18BAA7 /* MPDataCenterDemo_plugin */,
 			);
-			name = Targets;
 			path = Targets;
 			sourceTree = "<group>";
 		};
@@ -136,7 +151,6 @@
 				464E7B6045EB329DE53351E0 /* MPDataCenterDemo_plugin-Prefix.pch */,
 				14848F8713474900D6914E24 /* mPaas */,
 			);
-			name = MPDataCenterDemo_plugin;
 			path = MPDataCenterDemo_plugin;
 			sourceTree = "<group>";
 		};
@@ -226,6 +240,7 @@
 				39D3228D224B445200D42E7E /* LaunchScreen.storyboard in Resources */,
 				39D3228A224B445200D42E7E /* Assets.xcassets in Resources */,
 				39D32288224B445100D42E7E /* Main.storyboard in Resources */,
+				39E24018260370B100AFC7CE /* Demo.bundle in Resources */,
 				B6E08F9AA5AF6D9B241C9FDE /* meta.config in Resources */,
 				4379A218871C34D28EBC9B64 /* yw_1222.jpg in Resources */,
 			);
@@ -242,6 +257,7 @@
 				39D32290224B445200D42E7E /* main.m in Sources */,
 				39D32282224B445100D42E7E /* AppDelegate.m in Sources */,
 				C73555E91A2A7B6B7A70FFCB /* MPaaSInterface+MPDataCenterDemo_plugin.m in Sources */,
+				39E2401326036CA700AFC7CE /* MPInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
